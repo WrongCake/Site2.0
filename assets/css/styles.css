@@ -1,0 +1,147 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e2e;
+    color: #f4f4f8;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #27293d;
+    padding: 15px;
+}
+
+.header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff7f50;
+    cursor: pointer;
+}
+
+.header .search-bar {
+    position: relative;
+    display: flex;
+    width: 50%;
+}
+
+.header .search-bar input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.header .search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #444;
+    border-radius: 5px;
+    display: none;
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.header .search-results div {
+    padding: 8px;
+    border-bottom: 1px solid #555;
+    cursor: pointer;
+}
+
+.header .search-results div:hover {
+    background-color: #555;
+}
+
+.header .votes-btn {
+    background-color: #ff7f50;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Announcements */
+.announcements {
+    padding: 20px;
+}
+
+.announcement-item {
+    border-bottom: 1px solid #555;
+    padding: 10px 0;
+}
+
+.announcement-item h3 {
+    font-size: 1.2em;
+    color: #ff7f50;
+}
+
+.announcement-item p {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Series Page */
+.series-info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #555;
+}
+
+.series-info img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.series-info .details {
+    color: #f4f4f8;
+}
+
+.series-info .details h2 {
+    font-size: 1.8em;
+}
+
+.series-info .details .author-artist {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.series-info .details .rating {
+    font-size: 1.1em;
+    color: #ffb400;
+}
+
+/* Chapter List */
+.chapter-list {
+    padding: 20px;
+}
+
+.chapter-item {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    display: flex;
+    justify-content: space-between;
+    color: #ff7f50;
+    cursor: pointer;
+}
+
+.chapter-item:hover {
+    background-color: #333;
+}
