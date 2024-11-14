@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexScans - Chapter Reader</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo"><a href="index.html">FlexScans</a></div>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search series...">
+            <button onclick="searchSeries()">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="chapter-reader">
+            <h2>Chapter 1</h2>
+            <div id="comic-pages">
+                <img src="page1.jpg" alt="Page 1">
+                <img src="page2.jpg" alt="Page 2">
+                <!-- More pages dynamically added -->
+            </div>
+        </section>
+
+        <!-- Disqus comments for chapter page -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () { this.page.url = window.location.href; this.page.identifier = 'chapter'; };
+            (function() { var d = document, s = d.createElement('script'); s.src = 'https://your-disqus-shortname.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })();
+        </script>
+    </main>
+</body>
+</html>
