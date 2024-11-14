@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexScans - Series</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo"><a href="index.html">FlexScans</a></div>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search series...">
+            <button onclick="searchSeries()">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="series-info">
+            <img id="series-cover" src="cover-image-url.jpg" alt="Series Cover">
+            <h2 id="series-title">Series Title</h2>
+            <p><strong>Author:</strong> Author Name</p>
+            <p><strong>Artist:</strong> Artist Name</p>
+            <p id="series-description">Series description goes here...</p>
+        </section>
+
+        <section id="chapters">
+            <h3>Chapters</h3>
+            <ul>
+                <li><a href="chapter.html?chapter=1">Chapter 1</a></li>
+                <!-- Add more chapters dynamically -->
+            </ul>
+        </section>
+
+        <!-- Disqus comments for series page -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () { this.page.url = window.location.href; this.page.identifier = 'series'; };
+            (function() { var d = document, s = d.createElement('script'); s.src = 'https://your-disqus-shortname.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })();
+        </script>
+    </main>
+</body>
+</html>
