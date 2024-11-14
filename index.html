@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexScans - Homepage</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo"><a href="index.html">FlexScans</a></div>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search series...">
+            <button onclick="searchSeries()">Search</button>
+        </div>
+        <div id="login-buttons">
+            <button onclick="loginWithGoogle()">Login with Google</button>
+            <button onclick="loginWithDiscord()">Login with Discord</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="announcements">
+            <h2>Recent Announcements</h2>
+            <div id="announcement-list">
+                <!-- Announcements populated dynamically -->
+            </div>
+            <a href="announcements.html">See All Announcements</a>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
